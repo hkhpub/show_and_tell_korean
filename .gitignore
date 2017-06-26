@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /bazel-bin
 /bazel-ci_build-cache
 /bazel-genfiles
@@ -9,8 +8,6 @@
 
 /im2txt/model/
 
-=======
->>>>>>> 9e7b909... Initial commit
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
