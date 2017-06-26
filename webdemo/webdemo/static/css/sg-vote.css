@@ -1,0 +1,211 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: normal;
+  color: #333;
+}
+
+.top-container {
+  padding-top: 1rem;
+}
+
+.cand-frame {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cand-frame p {
+  margin-top: 1rem;
+}
+.cand-desc {
+  max-width: 90%;
+  margin: auto;
+  white-space: pre-line;
+  /*word-break: keep-all;*/
+}
+.cand-name {
+  margin-top: 1rem;
+}
+.cand-major {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.center-cropped {
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 100px;
+  width: 100px;
+}
+
+.sg-button {
+  cursor: pointer;
+}
+.sg-success-msg {
+  color: green;
+  text-align: center;
+  margin-top: 1rem;
+}
+.sg-error-msg {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+.sg-vote-link {
+  margin-top: 1rem;
+}
+.sg-back {
+  margin-top: 2rem;
+  text-align: center;
+}
+.sg-boder-top {
+  border-top: 2px solid #B60005;
+}
+.sg-email-field {
+  display: inline;
+  width: 62%;
+}
+.sg-email-box {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.sg-cert-code-box {
+  margin-bottom: 0.5rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+          box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.nav-link {
+  position: relative;
+  padding: 1rem;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+.nav-link.active {
+  color: #fff;
+}
+.nav-link.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+.sg-title {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  word-break: keep-all;
+  line-height: 2rem;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 50em) {
+  .blog-title {
+    font-size: 1.8rem;
+  }
+  .cand-desc {
+    max-width: 50%;
+    margin: auto;
+    white-space: pre-line;
+  }
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

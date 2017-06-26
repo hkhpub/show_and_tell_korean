@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+{% load static %}
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta charset="utf-8">
+<title>MSCOCO 한국어 캡션 수집</title>
+<meta name="description" content="Bootstrap Image Gallery is an extension to blueimp Gallery, a touch-enabled, responsive and customizable image and video gallery. It displays images and videos in the modal dialog of the Bootstrap framework, features swipe, mouse and keyboard navigation, transition effects, fullscreen support and on-demand content loading and can be extended to display additional content types.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+<link rel="stylesheet" href="{% static "css/demo.css" %}">
+</head>
+<body>
+<div class="container">
+    <h1 style="font-family: 'Nanum Gothic', sans-serif">MSCOCO 한국어 캡션 수집 툴</h1>
+    <br>
+    <!-- The container for the list of example images -->
+    <div id="links">
+        {% for image_entry in image_data %}
+            <a href="javascript:void(0)" title="{{ image_entry.path }}" data-imgid="{{ image_entry.image_id }}">
+                <img src="{{ image_entry.path }}" style="width: 100px; height: 100px;">
+            </a>
+        {% endfor %}
+    </div>
+    <br>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLongTitle">MSCOCO 한국어 캡션 수집</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation and button states -->
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/demo.js" %}"></script>
+</body>
+</html>

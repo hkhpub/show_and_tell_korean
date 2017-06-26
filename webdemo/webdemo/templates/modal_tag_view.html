@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-12 col-md-7">
+    <span>{{ image_name }}</span>
+    <img id="imageForCaption" src="{{ image_path }}" />
+  </div>
+  <div class="col-6 col-md-5">
+    <fieldset class="form-group">
+      <legend>MSCOCO 영문 캡션</legend>
+      <ul style="list-style-type: square; padding-left: 20px;">
+        {% for en_caption in en_captions %}
+        <li>
+          {{ en_caption }}
+        </li>
+      {% endfor %}
+      </ul>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <legend>자동번역된 한국어 캡션</legend>
+      {% for ko_caption in ko_captions %}
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" value="{{ forloop.counter0 }}">
+          {{ ko_caption }}
+        </label>
+      </div>
+      {% endfor %}
+    </fieldset>
+
+  </div>
+
+  <div style="padding: 15px; padding-bottom: 0px; width: 100%;" class="text-center">
+    <label class="sr-only" for="inlineFormInput">Name</label>
+    <input id="inlineFormInput" type="text" class="form-control"
+           style="display: inline; width: 80%;" placeholder="새 캡션을 만들어주세요.">
+    <button id="btnSaveCaption"
+            type="submit" class="btn btn-primary" style="margin-bottom: 4px; cursor: pointer;">저장</button>
+  </div>
+</div>
