@@ -58,4 +58,4 @@ im2txt\_analyzer.py 파일의 analyze_image 함수에 정의되어 있고 주의
 ![](/docs/demo3.png)
 
 ## 4. 시스템 데모 동영상
-[![동영상보기](/docs/video_thumbnail.png)](https://www.youtube.com/watch?v=jWRQNcan0tg)
+[![동영상보기](/docs/video_thumbnail.png)](https://www.youtube.com/watch?v=5MhyP1t8FqA)
